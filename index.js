@@ -34,3 +34,8 @@ function copy() {
     navigator.clipboard.writeText(output.value);
 }
 
+function clear_btn() {
+    input.value = "";
+    output.value = "";
+}
+
