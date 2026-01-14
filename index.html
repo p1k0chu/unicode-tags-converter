@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div>
+        <div class="flex children-margin-1em">
+            <div>
+                <input type="radio" name="action" value="encode">Encode<br>
+                <input type="radio" name="action" value="decode">Decode
+            </div>
+            <input type="button" onclick="convert()" value="Convert">
+        </div>
+
+        <div class="flex children-margin-1em">
+            <div>
+                <p>Input:</p>
+                <textarea rows="5" id="input" placeholder="Input"></textarea>
+            </div>
+
+            <div>
+                <p>Output:</p>
+                <textarea rows="5" id="output" readonly="true"></textarea><br>
+
+                <div class="centered">
+                    <input type="button" onclick="copy()" value="Copy">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>

@@ -1,0 +1,24 @@
+.flex {
+    display: flex;
+}
+
+.children-margin-1em {
+    &>* {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    &> :first-child {
+        margin-left: 0;
+    }
+
+    &> :last-child {
+        margin-right: 0;
+    }
+}
+
+.centered {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
