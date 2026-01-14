@@ -3,38 +3,35 @@
 <head>
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
+    <title>Unicode Tags Converter</title>
 </head>
 
 <body>
-    <div>
-        <div class="flex children-margin-1em">
-            <div>
-                <input type="radio" name="action" value="encode" checked=true>Encode<br>
-                <input type="radio" name="action" value="decode">Decode
-            </div>
-            <input type="button" onclick="convert()" value="Convert">
+    <div class="flex children-margin-1em">
+        <div>
+            <input type="radio" name="action" value="encode" checked=true>Encode<br>
+            <input type="radio" name="action" value="decode">Decode
         </div>
+        <input type="button" onclick="convert()" value="Convert">
+    </div>
 
-        <div class="flex children-margin-1em">
-            <div>
-                <label for="input">Input</label><br>
-                <textarea rows="5" id="input" placeholder="Input"></textarea>
-                <br>
-                <div class="centered">
-                    <input type="button" onclick="clear_btn()" value="Clear">
-                </div>
-            </div>
-
-            <div>
-                <label for="input">Output</label><br>
-                <textarea rows="5" id="output" readonly="true"></textarea><br>
-
-                <div class="centered">
-                    <input type="button" onclick="copy()" value="Copy">
-                </div>
+    <div class="flex children-margin-1em">
+        <div>
+            <label for="input">Input</label><br>
+            <textarea rows="5" id="input" placeholder="Input"></textarea>
+            <br>
+            <div class="centered">
+                <input type="button" onclick="clear_btn()" value="Clear">
             </div>
         </div>
 
+        <div>
+            <label for="input">Output</label><br>
+            <textarea rows="5" id="output" readonly="true"></textarea><br>
 
+            <div class="centered">
+                <input type="button" onclick="copy()" value="Copy">
+            </div>
+        </div>
     </div>
 </body>
