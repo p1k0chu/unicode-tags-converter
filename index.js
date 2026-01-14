@@ -9,7 +9,6 @@ function get_action() {
 
 function convert() {
     const action = get_action();
-    console.log(action)
 
     const s = input.value;
     let out = "";
